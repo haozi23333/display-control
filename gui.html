@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GUI</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <style>
+        * { padding: 0; margin: 0}
+        button {
+            padding: 2rem;
+            font-family: "Fira Code", sans-serif;
+        }
+    </style>
+</head>
+<body>
+<button id="open" state="1">OPEN</button>
+<button id="close" state="0" >CLOSE</button>
+</body>
+<script type="application/javascript">
+    const href = document.location.href.replace(/\/gui$/, '');
+    $('#open,#close').on('click', (event) => {
+        $.ajax({
+            url: href,
+            type: 'PUT',
+            data: {
+                state: $(event.target).attr('state')
+            },
+            success: () => alert('success')
+        })
+    })
+</script>
+</html>
