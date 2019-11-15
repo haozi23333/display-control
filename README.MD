@@ -34,3 +34,14 @@ Options:
                 curl -X PUT -d "state=0"  http://<your host>:<your port>/display 
 ```
 
+
+## 添加到捷径
+
+群里大佬支招可以添加到 捷径里面方便使用
+
+用 `Safari` 点击下面的链接， 即可添加， 记得点进去改一下里面的变量的值
+
+[开启显示器](https://www.icloud.com/shortcuts/5e0ae27eea014a58aca99df5e35d53e3)
+
+[关闭显示器](https://www.icloud.com/shortcuts/05a508650d8a46f08bb28713a4056cf5)
+
