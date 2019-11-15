@@ -4,6 +4,8 @@
 ~~(操， 都写完我才发现， 做一个 TG 机器人不是更舒服么)~~
 主要是使用GUI开关， 推荐不加token， 懒得输
 
+## Start
+`npm start`
 ## CLI 参数
 
 ```shell script
